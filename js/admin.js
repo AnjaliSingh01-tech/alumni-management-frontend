@@ -1,6 +1,6 @@
 const token = localStorage.getItem("token");
 
-fetch("http://localhost:5000/api/admin", {
+fetch("http://alumni-backend-folder.onrender.com/api/admin", {
   headers: {
     Authorization: "Bearer " + token
   }

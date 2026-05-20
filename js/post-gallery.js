@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const formData = new FormData();
             formData.append("image", file);
 
-            const uploadRes = await fetch("http://localhost:5000/api/upload", {
+            const uploadRes = await fetch("http://https://alumni-backend-folder.onrender.com/api/upload", {
                 method: "POST",
                 body: formData
             });
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const image_url = uploadData.imageUrl;
 
             // 🔥 STEP 2: Send gallery data to backend
-            const response = await fetch("http://localhost:5000/api/gallery/post", {
+            const response = await fetch("http://https://alumni-backend-folder.onrender.com/api/gallery/post", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

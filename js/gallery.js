@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 formData.append("image", file);
 
                 const uploadRes = await fetch(
-                    "http://localhost:5000/api/upload",
+                    "http://alumni-backend-folder.onrender.com/api/upload",
                     {
                         method: "POST",
                         body: formData
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // =========================
 
                 const res = await fetch(
-                    "http://localhost:5000/api/gallery/post",
+                    "http://alumni-backend-folder.onrender.com/api/gallery/post",
                     {
                         method: "POST",
 
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
             galleryContainer.innerHTML = "<h2>Loading...</h2>";
 
             const res = await fetch(
-                "http://localhost:5000/api/gallery/all"
+                "http://alumni-backend-folder.onrender.com/api/gallery/all"
             );
 
             const data = await res.json();
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
 
             const res = await fetch(
-                `http://localhost:5000/api/gallery/delete/${id}`,
+                `http://alumni-backend-folder.onrender.com/api/gallery/delete/${id}`,
                 {
                     method: "DELETE"
                 }
@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
 
             const res = await fetch(
-                `http://localhost:5000/api/gallery/edit/${id}`,
+                `http://alumni-backend-folder.onrender.com/api/gallery/edit/${id}`,
                 {
                     method: "PUT",
 
